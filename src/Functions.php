@@ -42,6 +42,26 @@ if (! function_exists('Termwind\render')) {
     }
 }
 
+if (! function_exists('Termwind\liveRender')) {
+    /**
+     * Returns a live render instance to the terminal.
+     */
+    function liveRender(string $html = '', int $options = OutputInterface::OUTPUT_NORMAL): LiveHtmlRenderer
+    {
+        return new LiveHtmlRenderer($html, $options);
+    }
+}
+
+if (! function_exists('Termwind\asyncRender')) {
+    /**
+     * Returns an async render instance to the terminal.
+     */
+    function asyncFunction(callable $task, int $options = OutputInterface::OUTPUT_NORMAL): AsyncHtmlRenderer
+    {
+        return new AsyncHtmlRenderer($task, $options);
+    }
+}
+
 if (! function_exists('Termwind\parse')) {
     /**
      * Parse HTML to a string that can be rendered in the terminal.
