@@ -12,17 +12,17 @@
     "require": {
         "php": "^8.1",
         "ext-mbstring": "*",
-        "symfony/console": "^6.4.12"
+        "symfony/console": "^6.4.15"
     },
     "require-dev": {
-        "illuminate/console": "^10.48.22",
-        "illuminate/support": "^10.48.22",
-        "laravel/pint": "^1.18.1",
+        "illuminate/console": "^10.48.24",
+        "illuminate/support": "^10.48.24",
+        "laravel/pint": "^1.18.2",
         "pestphp/pest": "^2.36.0",
         "pestphp/pest-plugin-mock": "2.0.0",
-        "phpstan/phpstan": "^1.12.6",
+        "phpstan/phpstan": "^1.12.11",
         "phpstan/phpstan-strict-rules": "^1.6.1",
-        "symfony/var-dumper": "^6.4.11",
+        "symfony/var-dumper": "^6.4.15",
         "thecodingmachine/phpstan-strict-rules": "^1.0.0"
     },
     "autoload": {
