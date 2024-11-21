@@ -358,15 +358,15 @@ test('line-through', function () {
 });
 
 test('bg-color-number', function () {
-    $html = parse('<div class="bg-green-300">text</div>');
+    $html = parse('<div class="bg-green-950">text</div>');
 
-    expect($html)->toBe('<bg=#86efac>text</>');
+    expect($html)->toBe('<bg=#052e16>text</>');
 });
 
 test('text-color-number', function () {
-    $html = parse('<div class="text-green-300">text</div>');
+    $html = parse('<div class="text-green-950">text</div>');
 
-    expect($html)->toBe('<fg=#86efac>text</>');
+    expect($html)->toBe('<fg=#052e16>text</>');
 });
 
 test('invalid text-color-number', function () {

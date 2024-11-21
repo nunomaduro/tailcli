@@ -32,6 +32,8 @@ final class Color
 
     public const SLATE_900 = '#0f172a';
 
+    public const SLATE_950 = '#020617';
+
     public const GRAY = 'gray';
 
     public const GRAY_50 = '#f9fafb';
@@ -54,6 +56,8 @@ final class Color
 
     public const GRAY_900 = '#111827';
 
+    public const GRAY_950 = '#030712';
+
     public const ZINC_50 = '#fafafa';
 
     public const ZINC_100 = '#f4f4f5';
@@ -73,6 +77,8 @@ final class Color
     public const ZINC_800 = '#27272a';
 
     public const ZINC_900 = '#18181b';
+
+    public const ZINC_950 = '#09090b';
 
     public const NEUTRAL_50 = '#fafafa';
 
@@ -94,6 +100,8 @@ final class Color
 
     public const NEUTRAL_900 = '#171717';
 
+    public const NEUTRAL_950 = '#0a0a0a';
+
     public const STONE_50 = '#fafaf9';
 
     public const STONE_100 = '#f5f5f4';
@@ -113,6 +121,8 @@ final class Color
     public const STONE_800 = '#292524';
 
     public const STONE_900 = '#1c1917';
+
+    public const STONE_950 = '#0c0a09';
 
     public const RED = 'red';
 
@@ -138,6 +148,8 @@ final class Color
 
     public const RED_900 = '#7f1d1d';
 
+    public const RED_950 = '#450a0a';
+
     public const ORANGE = '#f97316';
 
     public const ORANGE_50 = '#fff7ed';
@@ -160,6 +172,8 @@ final class Color
 
     public const ORANGE_900 = '#7c2d12';
 
+    public const ORANGE_950 = '#431407';
+
     public const AMBER_50 = '#fffbeb';
 
     public const AMBER_100 = '#fef3c7';
@@ -179,6 +193,8 @@ final class Color
     public const AMBER_800 = '#92400e';
 
     public const AMBER_900 = '#78350f';
+
+    public const AMBER_950 = '#451a03';
 
     public const YELLOW = 'yellow';
 
@@ -204,6 +220,8 @@ final class Color
 
     public const YELLOW_900 = '#713f12';
 
+    public const YELLOW_950 = '#422006';
+
     public const LIME_50 = '#f7fee7';
 
     public const LIME_100 = '#ecfccb';
@@ -223,6 +241,8 @@ final class Color
     public const LIME_800 = '#3f6212';
 
     public const LIME_900 = '#365314';
+
+    public const LIME_950 = '#1a2e05';
 
     public const GREEN = 'green';
 
@@ -248,6 +268,8 @@ final class Color
 
     public const GREEN_900 = '#14532d';
 
+    public const GREEN_950 = '#052e16';
+
     public const EMERALD_50 = '#ecfdf5';
 
     public const EMERALD_100 = '#d1fae5';
@@ -268,6 +290,8 @@ final class Color
 
     public const EMERALD_900 = '#064e3b';
 
+    public const EMERALD_950 = '#022c22';
+
     public const TEAL_50 = '#f0fdfa';
 
     public const TEAL_100 = '#ccfbf1';
@@ -287,6 +311,8 @@ final class Color
     public const TEAL_800 = '#115e59';
 
     public const TEAL_900 = '#134e4a';
+
+    public const TEAL_950 = '#042f2e';
 
     public const CYAN = 'cyan';
 
@@ -312,6 +338,8 @@ final class Color
 
     public const CYAN_900 = '#164e63';
 
+    public const CYAN_950 = '#083344';
+
     public const SKY_50 = '#f0f9ff';
 
     public const SKY_100 = '#e0f2fe';
@@ -331,6 +359,8 @@ final class Color
     public const SKY_800 = '#075985';
 
     public const SKY_900 = '#0c4a6e';
+
+    public const SKY_950 = '#082f49';
 
     public const BLUE = 'blue';
 
@@ -356,6 +386,8 @@ final class Color
 
     public const BLUE_900 = '#1e3a8a';
 
+    public const BLUE_950 = '#172554';
+
     public const INDIGO_50 = '#eef2ff';
 
     public const INDIGO_100 = '#e0e7ff';
@@ -375,6 +407,8 @@ final class Color
     public const INDIGO_800 = '#3730a3';
 
     public const INDIGO_900 = '#312e81';
+
+    public const INDIGO_950 = '#1e1b4b';
 
     public const VIOLET_50 = '#f5f3ff';
 
@@ -396,6 +430,8 @@ final class Color
 
     public const VIOLET_900 = '#4c1d95';
 
+    public const VIOLET_950 = '#2e1065';
+
     public const PURPLE_50 = '#faf5ff';
 
     public const PURPLE_100 = '#f3e8ff';
@@ -415,6 +451,8 @@ final class Color
     public const PURPLE_800 = '#6b21a8';
 
     public const PURPLE_900 = '#581c87';
+
+    public const PURPLE_950 = '#3b0764';
 
     public const FUCHSIA_50 = '#fdf4ff';
 
@@ -436,6 +474,8 @@ final class Color
 
     public const FUCHSIA_900 = '#701a75';
 
+    public const FUCHSIA_950 = '#4a044e';
+
     public const PINK_50 = '#fdf2f8';
 
     public const PINK_100 = '#fce7f3';
@@ -456,6 +496,8 @@ final class Color
 
     public const PINK_900 = '#831843';
 
+    public const PINK_950 = '#500724';
+
     public const ROSE_50 = '#fff1f2';
 
     public const ROSE_100 = '#ffe4e6';
@@ -475,6 +517,8 @@ final class Color
     public const ROSE_800 = '#9f1239';
 
     public const ROSE_900 = '#881337';
+
+    public const ROSE_950 = '#4c0519';
 
     public const MAGENTA = 'magenta';
 
