@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Termwind\ValueObjects;
 
 use Closure;
+use Termwind\Actions\ApplyBorder;
 use Termwind\Actions\StyleToMethod;
 use Termwind\Components\Element;
 use Termwind\Components\Hr;
@@ -162,6 +163,18 @@ final class Styles
     {
         return $this->with(['colors' => [
             'bg' => $this->getColorVariant($color, $variant),
+        ]]);
+    }
+
+    /**
+     * Adds a border to the element.
+     */
+    final public function border(string $color, int $variant = 0): self
+    {
+        $this->styleModifiers[__METHOD__] = static fn ($text): string => ApplyBorder::format($text);
+
+        return $this->with(['colors' => [
+            'border' => $this->getColorVariant($color, $variant),
         ]]);
     }
 
