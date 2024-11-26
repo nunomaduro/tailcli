@@ -1,22 +1,36 @@
 <?php
 
-declare(strict_types=1);
-
-namespace Termwind\Html;
-
 use Termwind\Components\Element;
 use Termwind\Contracts\Renderer;
+use Termwind\Exceptions\InvalidRenderer;
+use Termwind\Html\ElementRenderer;
+use function Termwind\registerRenderer;
 use Termwind\Termwind;
 use Termwind\ValueObjects\Node;
 
-/**
- * @internal
- */
-final class PreRenderer implements Renderer
+it('checks that default renderers are registered', function ($name) {
+    expect(ElementRenderer::hasRenderer($name))
+        ->toBeTrue();
+})->with(['code', 'pre', 'table']);
+
+it('adds valid custom renderer', function () {
+    expect(ElementRenderer::hasRenderer('custom'))
+        ->toBeFalse();
+
+    registerRenderer('custom', CustomRenderer::class);
+
+    expect(ElementRenderer::hasRenderer('custom'))
+        ->toBeTrue();
+});
+
+it('throws exception when adding invalid custom renderer', function () {
+    $this->expectException(InvalidRenderer::class);
+
+    registerRenderer('foo', 'bar');
+});
+
+final class CustomRenderer implements Renderer
 {
-    /**
-     * Gets HTML content from a given node and converts to the content element.
-     */
     public function toElement(Node $node): Element
     {
         $lines = explode("\n", $node->getHtml());

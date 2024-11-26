@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace Termwind\Html;
 
 use Termwind\Components\Element;
+use Termwind\Contracts\Renderer;
 use Termwind\Termwind;
 use Termwind\ValueObjects\Node;
 
 /**
  * @internal
  */
-final class CodeRenderer
+final class CodeRenderer implements Renderer
 {
     public const TOKEN_DEFAULT = 'token_default';
 

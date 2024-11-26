@@ -12,6 +12,7 @@ use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Output\BufferedOutput;
 use Symfony\Component\Console\Output\OutputInterface;
 use Termwind\Components\Element;
+use Termwind\Contracts\Renderer;
 use Termwind\HtmlRenderer;
 use Termwind\Termwind;
 use Termwind\ValueObjects\Node;
@@ -20,7 +21,7 @@ use Termwind\ValueObjects\Styles;
 /**
  * @internal
  */
-final class TableRenderer
+final class TableRenderer implements Renderer
 {
     /**
      * Symfony table object uses for table generation.

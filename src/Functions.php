@@ -6,6 +6,7 @@ namespace Termwind;
 
 use Closure;
 use Symfony\Component\Console\Output\OutputInterface;
+use Termwind\Html\ElementRenderer;
 use Termwind\Repositories\Styles as StyleRepository;
 use Termwind\ValueObjects\Style;
 use Termwind\ValueObjects\Styles;
@@ -61,5 +62,21 @@ if (! function_exists('Termwind\ask')) {
     function ask(string $question, ?iterable $autocomplete = null): mixed
     {
         return (new Question)->ask($question, $autocomplete);
+    }
+}
+
+if (! function_exists('Termwind\registerRenderer')) {
+    /**
+     * Registers a new renderer
+     *
+     * @param  string  $name
+     * @param  string  $renderer
+     * @return void
+     *
+     * @thows InvalidRenderer
+     */
+    function registerRenderer(string $name, string $renderer): void
+    {
+        ElementRenderer::register($name, $renderer);
     }
 }
