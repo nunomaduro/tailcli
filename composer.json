@@ -1,6 +1,6 @@
 {
     "name": "nunomaduro/termwind",
-    "description": "Its like Tailwind CSS, but for the console.",
+    "description": "It's like Tailwind CSS, but for the console.",
     "keywords": ["php", "cli", "package", "console", "css", "style"],
     "license": "MIT",
     "authors": [
