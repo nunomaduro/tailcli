@@ -22,6 +22,9 @@ jobs:
           tools: composer:v2
           coverage: none
 
+      - name: Set Version
+        run: composer config version "2.x-dev"
+
       - name: Install Dependencies
         run: composer update --prefer-stable --no-interaction --no-progress
 

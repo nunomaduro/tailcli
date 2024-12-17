@@ -28,6 +28,9 @@ jobs:
           echo "::add-matcher::${{ runner.tool_cache }}/php.json"
           echo "::add-matcher::${{ runner.tool_cache }}/phpunit.json"
 
+      - name: Set Version
+        run: composer config version "2.x-dev"
+
       - name: Install PHP dependencies
         run: composer update --${{ matrix.dependency-version }} --no-interaction --no-progress
 
