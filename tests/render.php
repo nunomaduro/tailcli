@@ -259,7 +259,37 @@ it('renders an emoji correctly with line-breaks correctly', function () {
         </div>
     HTML);
 
-    expect($html)->toBe("        \n\n<fg=#ef4444> ⚽️ </> A  ");
+    expect($html)->toBe("        \n\n<fg=#ef4444> ⚽️ </> A ");
+});
+
+it('renders East Asian characters chains of text-center with spaces correctly', function () {
+    $html = parse(<<<'HTML'
+        <div class="w-32">
+            <div class="w-full bg-yellow text-center">你好 世界</div>
+            <div class="w-full bg-yellow text-center">ハローワールド</div>
+        </div>
+    HTML);
+
+    expect($html)->toBe("<bg=yellow>           你好 世界            </>\n<bg=yellow>         ハローワールド         </>");
+});
+
+it('renders East Asian characters chains of space between with spaces correctly', function () {
+    $html = parse(<<<'HTML'
+        <div class="w-32">
+            <div class="flex mx-2">
+                <span>Termwind</span>
+                <span class="flex-1"></span>
+                <span>你好 世界</span>
+            </div>
+            <div class="flex mx-2">
+                <span>Termwind</span>
+                <span class="flex-1"></span>
+                <span>ハローワールド</span>
+            </div>
+        </div>
+    HTML);
+
+    expect($html)->toBe("  Termwind           你好 世界  \n  Termwind      ハローワールド  ");
 });
 
 it('renders multiple chains of w-full with margins and text-alignment', function () {
